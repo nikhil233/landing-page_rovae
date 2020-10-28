@@ -370,6 +370,13 @@ section {
   width: 95%;
   margin-left: auto;
   margin-right: auto;
+  height: 370px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .testi .sec_pad .slide .splide__track .inst_box {
@@ -539,7 +546,7 @@ section {
   height: auto;
   position: absolute;
   top: -35px;
-  left: 20px;
+  left: 25px;
 }
 
 .sec_spe .cour_spec .sec_content .cour_cen .diamond:before {
@@ -573,6 +580,7 @@ section {
   z-index: 2;
   width: 190px;
   text-align: center;
+  padding-top: 20px;
 }
 
 .sec_spe .cour_spec .sec_content .con .num {
