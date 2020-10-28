@@ -3,6 +3,10 @@
   padding: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 p {
   margin-bottom: 0;
 }
@@ -352,7 +356,6 @@ section {
 .testi .sec_pad .slide {
   position: relative;
   z-index: 1;
-  margin-top: 70px;
 }
 
 .testi .sec_pad .slide .splide__arrow {
