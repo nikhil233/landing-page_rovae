@@ -25,6 +25,7 @@ section{
 .text-center{
     text-align: center;
 }
+
 .hero_sec{
     min-height: max-content;
     padding-bottom: 100px;
@@ -75,7 +76,8 @@ section{
         }
         .btn_hero{
             margin: 30px 0;
-            width: 327px;
+            max-width: 327px;
+            padding: 20px 70px;
             height: 85px;
             background: #FFFFFF 0% 0% no-repeat padding-box;
             box-shadow: 0px 3px 6px #0000005C;
@@ -210,6 +212,7 @@ section{
         }
     }
 }
+
 .testi{
     position: relative;
     min-height: 600px;
@@ -273,7 +276,7 @@ section{
                 width: 95%;
                 margin-left: auto;
                 margin-right: auto;
-                height: 370px;
+                height: 420px;
                display: flex;
                align-items: center;
 
@@ -294,11 +297,13 @@ section{
                         position: relative;
                         z-index: 1;
                         .test {
-                            position: absolute;
+                            position: relative;
                             background: #2699FB;
                             border-radius: 23px;
-                            top: -70px;
-                            left: 20px;
+                            margin-top: -120px;
+                            margin-left: 30px;
+                            // top: -70px;
+                            // left: 20px;
                             text-align: center;
                             transform:rotate(45deg);
                             width: 130px;
@@ -360,7 +365,8 @@ section{
 }
 .sec_spe{
     z-index: 1;
-    position: relative;
+    position: relative; 
+    
     margin-top: 50px;
     overflow: hidden;
     .back-yel{
@@ -672,6 +678,69 @@ section{
     .sec_spe .cour_spec .sec_content .sec_connr {
         padding: 30px 30px;
         border-bottom: 1px solid #B1B1B1;
+    }
+    .hero_sec{
+        h1{
+            font-size: 30px!important;
+        }
+        .content{
+            p{
+                font-size: 18px;
+            }
+        }
+        .btn_hero{
+            max-width: 327px;
+            padding: 20px 50px;
+        }
+    }
+    .testi{
+        .splide__track{
+            height: 550px!important;
+            h3{
+                padding-top: 10px;
+            }
+            .test{
+                margin-top: -120px!important;
+               margin-left:60px !important;
+              
+            }
+        }
+    }
+    .val-box .val ul li {
+        padding: 0px 15px;
+    }
+    .sec_spe{
+        .back_dots1{
+            display: none;
+        }
+        .back_dots2{
+           display: none;
+        }
+    }
+    .foot{
+        
+        ul{
+            @include flexcenter();
+            
+            flex-direction: column;
+            
+            justify-content: flex-start;
+            width: 100%;
+            li{
+                padding: 0px 20px;
+                @include flexcenter();
+                list-style: none;
+                flex-direction: row;
+                .foot_desc{
+                    padding: 0 10px;
+                    font-size: 15px;
+                }
+                &:not(:first-child) {
+                    border-top: 1px solid #B1B1B1;
+                    border-left: none;
+                }
+            }
+        }
     }
 }
 
